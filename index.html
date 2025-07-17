@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Floating Login</title>
+    <style>
+        body {
+            background-color: rgb(116, 116, 121);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        .login-box {
+            background-color: rgb(121, 115, 115);
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 0 15px rgba(0,0,0,0.3);
+            color: rgb(50, 18, 18);
+            width: 300px;
+        }
+
+        .login-box h3 {
+            text-align: center;
+            margin-bottom: 20px;
+            font-weight: bolder;
+        }
+
+        .form-group {
+            position: relative;
+            margin-bottom: 20px;
+        }
+
+        .form-group input,
+        .form-group select {
+            width: 100%;
+            padding: 10px 10px 10px 10px;
+            border: none;
+            border-radius: 5px;
+            background: #fff;
+            outline: none;
+            font-size: 16px;
+        }
+
+        .form-group label {
+            position: absolute;
+            left: 10px;
+            top: 10px;
+            color: #555;
+            pointer-events: none;
+            transition: 0.3s ease all;
+            background-color: rgb(121, 115, 115);
+            padding: 0 5px;
+        }
+
+        .form-group input:focus + label,
+        .form-group input:not(:placeholder-shown) + label,
+        .form-group select:focus + label,
+        .form-group select:valid + label {
+            top: -10px;
+            left: 8px;
+            font-size: 12px;
+            color: white;
+        }
+
+        .outside-link {
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        .outside-link a {
+            color: white;
+            font-weight: bold;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="login-box">
+        <h3>Login Form</h3>
+        <form>
+            <div class="form-group">
+                <input type="text" name="username" id="username" required placeholder=" " />
+                <label for="username">Username</label>
+            </div>
+
+            <div class="form-group">
+                <input type="tel" name="phone" id="phone" required placeholder=" " />
+                <label for="phone">Phone</label>
+            </div>
+
+            <div class="form-group">
+                <select name="district" id="district" required>
+                    <option value="" disabled selected hidden></option>
+                    <option value="kinondoni">Kinondoni</option>
+                    <option value="temeke">Temeke</option>
+                    <option value="kigamboni">Kigamboni</option>
+                    <option value="ilala">Ilala</option>
+                </select>
+                <label for="district">Country/District</label>
+            </div>
+        </form>
+    </div>
+
+    <div class="outside-link">
+        <a href="brigtpg.html">Choose your best necklace<br>Price @10,000/=</a>
+    </div>
+</body>
+</html>

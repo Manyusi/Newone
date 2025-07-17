@@ -1,0 +1,15 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: linear-gradient(black,black),url(image/img\ 1.jpg),no-repeat;
+    background-size: cover;
+    background-position: 50%,50%;
+}
+.container{
+    width: 300px;
+    height: 200px;
+    margin: 30px auto;
+}
